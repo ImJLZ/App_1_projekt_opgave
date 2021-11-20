@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".SetName">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:text="Write name of your:"
+        android:textSize="22sp"
+        />
+    <RadioGroup
+        android:id="@+id/rgNameOf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbMother"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Mother"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/rbFather"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Father"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/rbCat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cat"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:id="@+id/rbDog"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Dog"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/setName"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:hint="Name" />
+    <Button
+        android:id="@+id/btnSetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Send"
+        />
+</LinearLayout>
